@@ -1,0 +1,55 @@
+* {
+    margin: 0 0 0 0;
+}
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+body {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+article {
+    background-color: #1D1E2F;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    line-height: 2.8;
+}
+
+article div {
+    @include vertical-align();
+    height: 30vh;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.border-white {
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: .4em 1em .4em 1em;
+}
+
+
+#resume {
+    margin-top: 16px;
+}
+
+a:link    { color: #c00 }
+a:visited { color: #0c0 }
+a:hover   { color: #00c }
+a:active  { color: #ccc }
