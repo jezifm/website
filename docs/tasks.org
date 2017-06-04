@@ -1,9 +1,10 @@
-* Tasks [33%]
+* Tasks [31%]
 - [X] Create a docker friendly development workflow
 - [X] Use jade for html templates
 - [X] Add social media links
 - [X] Add blog link
 - [X] Add support to mobile devices
+- [ ] Create CI on repo
 - [ ] Add contact links
 - [ ] Add singularity explorer
 - [ ] Add snappy scrolling
