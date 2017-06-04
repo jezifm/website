@@ -5,6 +5,7 @@ This repository contains source files for my website.
 ## Usage
 
 ```
-npm install
-webpack-dev-server --host 0.0.0.0 --inline
+docker-compose up
 ```
+
+Open up browser and go to http://localhost:8080/
