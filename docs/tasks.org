@@ -1,5 +1,6 @@
 * Tasks [0%]
 - [ ] Create a docker friendly development workflow
+- [ ] Use jade for html templates
 - [ ] Add contact links
 - [ ] Add blog link
 - [ ] Add singularity explorer
