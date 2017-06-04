@@ -23,14 +23,24 @@ module.exports = {
 		    {loader: "css-loader"},
 		    {loader: "sass-loader"}
 		]
+	    },
+	    {
+		test: /\.pug$/,
+		exclude: /node_modules/,
+		use: [
+		    {loader: 'raw-loader'},
+		    {loader: 'pug-html-loader'}
+		]
 	    }
 	]
     },
     plugins: [
     	// new UglifyJSPlugin(),
 	new HtmlWebPackPlugin({
-	    title: "Jezrael Arciaga"
+	    title: "Jezrael Arciaga",
 	})
-    ]
+    ],
+    devServer: {
+	disableHostCheck: true,
+    }
 };
-

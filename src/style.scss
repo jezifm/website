@@ -1,41 +1,91 @@
 * {
-    margin: 0 0 0 0;
-}
-
-@mixin vertical-align {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin: 0;
 }
 
 body {
-    text-align: center;
-}
-
-h2 {
-    font-weight: 200;
-}
-
-article {
     background-color: #1D1E2F;
     color: #FFFFFF;
     font-family: sans-serif;
     font-weight: 200;
     height: 100vh;
-    line-height: 2.8;
 }
 
-article div {
-    @include vertical-align();
-    height: 30vh;
+.alt-color {
+    background-color: #163952;
 }
 
+article {
+    height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 0% 100%;
+    scroll-snap-points-x: repeat(100%);
+}
 
-a {
-    text-decoration: none;
-    color: white;
+.container-5 {
+    height: 5%;
+    position: relative;
+}
+
+.container-7 {
+    height: 7%;
+    position: relative;
+}
+
+.container-10 {
+    height: 10%;
+    position: relative;
+}
+
+.container-20 {
+    height: 20%;
+    position: relative;
+}
+
+.container-40 {
+    height: 40%;
+    position: relative;
+}
+
+.container-45 {
+    height: 45%;
+    position: relative;
+}
+
+.container-50 {
+    height: 50%;
+    position: relative;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.font-small {
+    font-size: 0.8em;
+}
+
+li {
+    display: inline-block;
+    margin-right: 1em;
+    padding-right: 1em;
+    border-right: thin solid #FFFFFF;
+    list-style: none;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+h2 {
+    font-weight: 200;
+    text-align: center;
 }
 
 .border-white {
@@ -44,12 +94,8 @@ a {
     padding: .4em 1em .4em 1em;
 }
 
-
-#resume {
-    margin-top: 16px;
-}
-
-a:link    { color: #c00 }
-a:visited { color: #0c0 }
-a:hover   { color: #00c }
-a:active  { color: #ccc }
+a         {text-decoration: none;}
+a:link    { color: #c00 }  /* unvisited links */
+a:visited { color: #0c0 }  /* visited links   */
+a:hover   { color: #00c }  /* user hovers     */
+a:active  { color: #ccc }  /* active links    */

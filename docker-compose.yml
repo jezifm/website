@@ -5,8 +5,7 @@ services:
   web:
     build: .
     volumes:
-      - ./src:/code/src
-      - ./bin:/code/bin
+      - .:/code
     ports:
       - '8080:8080'
     command: webpack-dev-server --host 0.0.0.0 --inline
