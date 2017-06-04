@@ -1,0 +1,13 @@
+* Tasks [0%]
+- [ ] Add contact links
+- [ ] Add blog link
+- [ ] Add singularity explorer
+- [ ] Add snappy scrolling
+- [ ] Create visualization
+- [ ] Add footer
+- [ ] Add navigation
+- [ ] Add support to mobile devices
+- [ ] Add chat link
+- [ ] Add subdomain resume.jezarciaga.com
+- [ ] Add subdomain blog.jezarciaga.com
+- [ ] Add subdomain gallery.jezarciaga.com
