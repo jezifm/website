@@ -2,33 +2,25 @@
     margin: 0;
 }
 
-body {
-    background-color: #1D1E2F;
-    color: #FFFFFF;
-    font-family: sans-serif;
-    font-weight: 200;
-    height: 100vh;
-}
-
 .alt-color {
     background-color: #163952;
 }
 
-article {
-    height: 100vh;
-    scroll-snap-type: mandatory;
-    scroll-snap-destination: 0% 100%;
-    scroll-snap-points-x: repeat(100%);
+.border-white {
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: .4em 1em .4em 1em;
 }
 
-.container-5 {
-    height: 5%;
-    position: relative;
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
-.container-7 {
-    height: 7%;
-    position: relative;
+.center {
+    text-align: center;
+    width: 100%;
 }
 
 .container-10 {
@@ -51,24 +43,49 @@ article {
     position: relative;
 }
 
+.container-5 {
+    height: 5%;
+    position: relative;
+}
+
 .container-50 {
     height: 50%;
     position: relative;
 }
 
-.bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.center {
-    text-align: center;
-    width: 100%;
+.container-7 {
+    height: 7%;
+    position: relative;
 }
 
 .font-small {
     font-size: 0.8em;
+}
+
+a         {text-decoration: none;}
+a:link    { color: #c00 }  /* unvisited links */
+a:visited { color: #0c0 }  /* visited links   */
+a:hover   { color: #00c }  /* user hovers     */
+a:active  { color: #ccc }  /* active links    */
+
+body {
+    background-color: #1D1E2F;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: 200;
+    height: 100vh;
+}
+
+h2 {
+    font-weight: 200;
+    text-align: center;
+}
+
+article {
+    height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 0% 100%;
+    scroll-snap-points-x: repeat(100%);
 }
 
 li {
@@ -82,20 +99,3 @@ li {
 li:last-child {
     border-right: none;
 }
-
-h2 {
-    font-weight: 200;
-    text-align: center;
-}
-
-.border-white {
-    border: 2px solid white;
-    border-radius: 4px;
-    padding: .4em 1em .4em 1em;
-}
-
-a         {text-decoration: none;}
-a:link    { color: #c00 }  /* unvisited links */
-a:visited { color: #0c0 }  /* visited links   */
-a:hover   { color: #00c }  /* user hovers     */
-a:active  { color: #ccc }  /* active links    */

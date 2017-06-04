@@ -9,5 +9,4 @@ document.write(body)
 //
 // let $ = require('jquery')
 // import 'jquery-scrollify'
-// $(function() {$.scrollify({section: "article"})});
 // $(() => $.scrollify({section: 'article'}))
