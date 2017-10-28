@@ -2,12 +2,15 @@ const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 module.exports = {
+
     entry: "./src/app.js",
+
     output: {
 	path: __dirname + "/bin",
 	filename: "app.bundle.js",
 	publicPath: "/"
     },
+
     module: {
 	rules: [
 	    {
@@ -34,12 +37,14 @@ module.exports = {
 	    }
 	]
     },
+
     plugins: [
     	// new UglifyJSPlugin(),
 	new HtmlWebPackPlugin({
 	    title: "Jezrael Arciaga | Data Scientist",
 	})
     ],
+
     devServer: {
 	disableHostCheck: true,
     }
