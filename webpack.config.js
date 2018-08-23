@@ -41,7 +41,7 @@ module.exports = {
     plugins: [
     	// new UglifyJSPlugin(),
 	new HtmlWebPackPlugin({
-	    title: "Jezrael Arciaga | Data Scientist",
+	    title: "Jezrael Arciaga | Software Engineer",
 	})
     ],
 
